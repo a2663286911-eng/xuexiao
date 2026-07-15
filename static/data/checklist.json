@@ -1,0 +1,107 @@
+{
+  "categories": [
+    {
+      "id": "documents",
+      "name": "证件材料",
+      "icon": "🪪",
+      "items": [
+        {"id": "doc-1", "name": "录取通知书", "note": "原件，按通知书要求携带", "tag": "must"},
+        {"id": "doc-2", "name": "身份证", "note": "原件及复印件（份数按通知书要求）", "tag": "must"},
+        {"id": "doc-3", "name": "证件照", "note": "一寸、二寸若干张（尺寸和底色按通知书要求）", "tag": "suggest"},
+        {"id": "doc-4", "name": "个人档案", "note": "按通知书要求自带或邮寄，勿拆封", "tag": "must"},
+        {"id": "doc-5", "name": "团员/党员档案", "note": "如有", "tag": "suggest"}
+      ]
+    },
+    {
+      "id": "clothing",
+      "name": "衣物",
+      "icon": "🧺",
+      "items": [
+        {"id": "cloth-1", "name": "夏季衣服", "note": "重庆9月仍很热", "tag": "must"},
+        {"id": "cloth-2", "name": "秋季衣服", "note": "10月后逐渐转凉", "tag": "must"},
+        {"id": "cloth-3", "name": "冬季衣服", "note": "可国庆回家再带或让家人寄来", "tag": "suggest"},
+        {"id": "cloth-4", "name": "运动服装", "note": "体育课和军训需要", "tag": "must"},
+        {"id": "cloth-5", "name": "拖鞋", "note": "", "tag": "must"},
+        {"id": "cloth-6", "name": "运动鞋", "note": "至少两双换着穿", "tag": "must"}
+      ]
+    },
+    {
+      "id": "toiletries",
+      "name": "洗漱用品",
+      "icon": "🫧",
+      "items": [
+        {"id": "wash-1", "name": "牙刷、牙膏、漱口杯", "note": "", "tag": "must"},
+        {"id": "wash-2", "name": "毛巾", "note": "多条，分用途", "tag": "must"},
+        {"id": "wash-3", "name": "洗发水、沐浴露", "note": "", "tag": "buy"},
+        {"id": "wash-4", "name": "脸盆、水桶", "note": "", "tag": "buy"},
+        {"id": "wash-5", "name": "洗衣液/洗衣粉", "note": "", "tag": "buy"},
+        {"id": "wash-6", "name": "衣架、晾衣夹", "note": "", "tag": "buy"},
+        {"id": "wash-7", "name": "梳子、镜子", "note": "", "tag": "suggest"}
+      ]
+    },
+    {
+      "id": "dormitory",
+      "name": "宿舍用品",
+      "icon": "🛏️",
+      "items": [
+        {"id": "dorm-1", "name": "床上用品", "note": "2025级可自带或通过网上报到系统自愿购买，2026级方式待通知", "tag": "suggest"},
+        {"id": "dorm-2", "name": "凉席", "note": "重庆夏天需要，到校根据床铺尺寸购买", "tag": "buy"},
+        {"id": "dorm-3", "name": "蚊帐/床帘", "note": "", "tag": "buy"},
+        {"id": "dorm-4", "name": "插线板", "note": "带USB口更实用", "tag": "must"},
+        {"id": "dorm-5", "name": "小台灯", "note": "", "tag": "suggest"},
+        {"id": "dorm-6", "name": "收纳箱", "note": "", "tag": "buy"},
+        {"id": "dorm-7", "name": "小风扇", "note": "重庆夏天备用", "tag": "buy"},
+        {"id": "dorm-8", "name": "小挂锁", "note": "锁柜子用", "tag": "suggest"}
+      ]
+    },
+    {
+      "id": "study",
+      "name": "学习用品",
+      "icon": "✏️",
+      "items": [
+        {"id": "study-1", "name": "笔、笔记本", "note": "", "tag": "must"},
+        {"id": "study-2", "name": "书包/双肩包", "note": "", "tag": "must"},
+        {"id": "study-3", "name": "U盘", "note": "", "tag": "suggest"},
+        {"id": "study-4", "name": "耳机", "note": "宿舍不打扰室友", "tag": "must"}
+      ]
+    },
+    {
+      "id": "electronics",
+      "name": "电子设备",
+      "icon": "📱",
+      "items": [
+        {"id": "elec-1", "name": "手机", "note": "", "tag": "must"},
+        {"id": "elec-2", "name": "充电器、数据线", "note": "多带一根备用", "tag": "must"},
+        {"id": "elec-3", "name": "充电宝", "note": "", "tag": "must"},
+        {"id": "elec-4", "name": "笔记本电脑", "note": "看专业需求，入学后再买也可以", "tag": "suggest"},
+        {"id": "elec-5", "name": "网线", "note": "到校根据网络情况决定", "tag": "buy"}
+      ]
+    },
+    {
+      "id": "medicine",
+      "name": "常用药品",
+      "icon": "🩹",
+      "items": [
+        {"id": "med-1", "name": "感冒药", "note": "", "tag": "suggest"},
+        {"id": "med-2", "name": "肠胃药", "note": "水土不服备用", "tag": "suggest"},
+        {"id": "med-3", "name": "创可贴", "note": "", "tag": "suggest"},
+        {"id": "med-4", "name": "防暑药", "note": "根据个人需要和出发时天气准备", "tag": "suggest"},
+        {"id": "med-5", "name": "驱蚊水", "note": "重庆蚊子多", "tag": "suggest"},
+        {"id": "med-6", "name": "个人常用药", "note": "根据自身情况准备", "tag": "suggest"}
+      ]
+    },
+    {
+      "id": "military",
+      "name": "军训用品",
+      "icon": "☀️",
+      "items": [
+        {"id": "mil-1", "name": "防晒用品", "note": "重庆太阳强烈，不分男女都需要", "tag": "must"},
+        {"id": "mil-2", "name": "大容量水杯", "note": "训练期间大量补水", "tag": "must"},
+        {"id": "mil-3", "name": "舒适鞋垫", "note": "军训鞋底较硬，多备几双", "tag": "must"},
+        {"id": "mil-4", "name": "湿纸巾", "note": "", "tag": "suggest"},
+        {"id": "mil-5", "name": "润喉糖", "note": "喊口号嗓子容易哑", "tag": "suggest"},
+        {"id": "mil-6", "name": "小零食", "note": "低血糖备用", "tag": "suggest"}
+      ]
+    }
+  ]
+}

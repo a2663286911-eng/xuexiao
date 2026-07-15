@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "新生到校交通指南",
+    "summary": "合川校区与綦江校区的高铁路线、长途汽车路线及自驾路线详解",
+    "categoryName": "攻略",
+    "campus": "all",
+    "grade": "2026级",
+    "readTime": "3分钟",
+    "coverIcon": "🚗",
+    "status": "学生经验",
+    "applicableYear": "2026",
+    "verifiedAt": "2026-07-15",
+    "sourceTitle": "学生实地经验整理",
+    "sourceUrl": "",
+    "content": "<h2>📍 合川校区地址：重庆市合川区假日大道1号</h2><h3>（一）高铁/动车</h3><p>从<strong>重庆北站</strong>或<strong>重庆西站</strong>出发，乘坐高铁或动车直达<strong>合川站</strong>，行程大约 25~36 分钟。到达合川站后：</p><ul><li><strong>打车</strong>：费用通常不超过 20 元</li><li><strong>公交</strong>：乘坐 <strong>116路</strong> 或 <strong>126路</strong> 公交车到\"移通学院\"站，票价仅需 2 元</li></ul><h3>（二）长途汽车</h3><p>重庆主城多个区的汽车客运站有直达<strong>合川客运中心</strong>的班车，全程高速，大约 60 分钟可到达。到达合川汽车站后：</p><ul><li><strong>打车</strong>：费用大约 10 元</li><li><strong>公交</strong>：乘坐 <strong>236路</strong> 或其他合适的公交车到达学校附近</li></ul><h3>（三）自驾</h3><p>导航\"重庆市合川区假日大道1号\"。路线：<strong>G75 渝武高速</strong>重庆至合川方向，在<strong>合川（涪江二桥）</strong>高速公路出口下道，至学校。</p><hr><h2>📍 綦江校区地址：重庆市綦江区通惠街道登瀛大道36号</h2><h3>（一）高铁/动车</h3><p>从<strong>重庆北站</strong>或<strong>重庆西站</strong>出发，乘坐高铁或动车直达<strong>綦江东站</strong>，行程大约 25~33 分钟。到达綦江东站后：</p><ul><li><strong>打车</strong>：费用通常不超过 20 元</li><li><strong>公交</strong>：乘坐 <strong>107路</strong> 公交车到\"重庆移通学院\"站，票价仅需 2 元</li></ul><h3>（二）长途汽车</h3><p>重庆主城多个区的汽车客运站有直达<strong>綦江客运中心</strong>的班车，全程高速，大约 60~90 分钟可到达。到达綦江汽车站后：</p><ul><li><strong>打车</strong>：费用通常不超过 20 元</li><li><strong>公交</strong>：乘坐 <strong>213路</strong> 或 <strong>202路</strong> 公交车到\"重庆移通学院\"站，票价仅需 2 元</li></ul><h3>（三）自驾</h3><p>导航\"重庆市綦江区登瀛大道36号\"。路线：<strong>G75 兰海高速</strong>重庆至綦江方向，在<strong>綦江北、綦江、通惠、古剑山</strong>收费站出口下道至学校。</p><p class=\"text-small text-muted\">以上交通信息整理自学生实地经验，公交路线和票价可能调整，请以实际运营为准。</p>"
+  },
+  {
+    "id": "2",
+    "title": "报到当天完整流程",
+    "summary": "2026级新生报到当天的步骤与注意事项参考",
+    "categoryName": "攻略",
+    "campus": "all",
+    "grade": "2026级",
+    "readTime": "2分钟",
+    "coverIcon": "🏫",
+    "status": "往年官方参考",
+    "applicableYear": "2025",
+    "verifiedAt": "2026-07-15",
+    "sourceTitle": "重庆移通学院2025年普通本科新生入学指南",
+    "sourceUrl": "https://mp.weixin.qq.com/s/YAkqzF6uAFOh9yru3qyYHA",
+    "content": "<div class=\"notice notice-warning\"><strong>⚠️ 2026级报到流程尚未公布。</strong>以下为往年一般流程参考。报到地点、时间及各环节顺序以学校2026级正式通知为准。</div><ol><li>到达学校 → 找到学院报到点</li><li>核验录取通知书和身份证</li><li>具体安排待学校发布</li></ol><p>建议提前准备好录取通知书原件、身份证原件及复印件、证件照等报到材料。具体材料清单请查看开学报到页面的材料说明。</p>"
+  },
+  {
+    "id": "3",
+    "title": "新生防骗指南",
+    "summary": "新生开学季常见诈骗类型与防范建议",
+    "categoryName": "攻略",
+    "campus": "all",
+    "grade": "通用",
+    "readTime": "3分钟",
+    "coverIcon": "🛡️",
+    "status": "通用建议",
+    "applicableYear": "",
+    "verifiedAt": "2026-07-15",
+    "sourceTitle": "学生经验整理",
+    "sourceUrl": "",
+    "content": "<h3>常见诈骗类型</h3><ul><li><strong>假冒迎新群</strong>：以\"官方新生群\"名义收费、收集个人信息</li><li><strong>代缴学费</strong>：声称可以优惠代缴学费、预留宿舍</li><li><strong>虚假兼职</strong>：以高薪兼职为诱饵骗取押金或个人信息</li><li><strong>校园贷</strong>：诱导办理高利贷</li></ul><h3>防范建议</h3><ul><li>学校官方迎新群不收取任何费用</li><li>学费仅通过学校官方渠道缴纳</li><li>不轻信未经核实的优惠信息</li><li>保护个人信息，不随意提供身份证、银行卡信息</li></ul>"
+  }
+]

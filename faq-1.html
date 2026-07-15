@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新生问答 — 移通新生指南</title>
+  <meta name="description" content="重庆移通学院新生常见问题解答 — 宿舍、食堂、军训、学习、校园卡、校园网、交通、生活费、转专业、防骗等。">
+  <meta property="og:title" content="新生问答 — 移通新生指南">
+  <meta property="og:description" content="关于宿舍、报到、军训、学习、校园生活……新生的所有疑问，这里都有答案。">
+  <meta property="og:type" content="website">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/components.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">跳到主内容</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo"><span class="logo-icon">🎓</span>移通新生指南</a>
+      <nav aria-label="主导航">
+        <ul class="nav-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="registration.html">开学报到</a></li>
+          <li><a href="life.html">宿舍生活</a></li>
+          <li><a href="study.html">学习指南</a></li>
+          <li><a href="map.html">校园地图</a></li>
+          <li><a href="military.html">军训指南</a></li>
+          <li><a href="faq.html">新生问答</a></li>
+        </ul>
+      </nav>
+      <a href="search.html" class="nav-search-btn" aria-label="搜索">🔍</a>
+      <button class="menu-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+  <nav class="mobile-nav" aria-label="移动端导航">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="registration.html">开学报到</a></li>
+      <li><a href="life.html">宿舍生活</a></li>
+      <li><a href="study.html">学习指南</a></li>
+      <li><a href="map.html">校园地图</a></li>
+      <li><a href="military.html">军训指南</a></li>
+      <li><a href="faq.html">新生问答</a></li>
+      <li><a href="checklist.html">开学物品清单</a></li>
+      <li><a href="contact.html">联系与答疑</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">❓ 新生问答</h1>
+        <p class="page-subtitle">新生的所有疑问，这里尽量回答</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">首页</a><span class="separator">›</span><span>新生问答</span>
+      </nav>
+    </div>
+
+    <section class="section">
+      <div class="container" style="max-width:800px;">
+        <!-- Search -->
+        <div class="search-box mb-3" style="max-width:100%;">
+          <input type="search" id="faq-search" placeholder="🔍 搜索问题…" aria-label="搜索FAQ">
+        </div>
+
+        <!-- Category Filter -->
+        <div class="filter-bar" id="faq-filter"></div>
+
+        <!-- FAQ List -->
+        <div id="faq-container">
+          <div class="loading-state"><span class="icon">⏳</span><p>加载问答中…</p></div>
+        </div>
+
+        <!-- No answer found -->
+        <div class="conversion-box mt-4">
+          <h3>🤔 没有找到答案？</h3>
+          <p>获取新生答疑、学生交流和后续更新提醒。</p>
+          <a href="contact.html" class="btn btn-primary">查看新生答疑方式 →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+  <div class="mobile-bottom-bar no-print">
+    <a href="contact.html" class="btn btn-primary btn-sm">📦 领取新生资料</a>
+    <button class="btn-close" aria-label="关闭">✕</button>
+  </div>
+
+  <script src="static/js/data-loader.js"></script>
+  <script src="static/js/main.js"></script>
+  <script src="static/js/faq.js"></script>
+  <script src="static/js/analytics.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => FaqApp.init());</script>
+</body>
+</html>

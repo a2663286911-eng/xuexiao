@@ -1,0 +1,61 @@
+{
+  "majors": [
+    {"name": "财务管理", "college": "淬炼商学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 15000, "status": "2026官方信息"},
+    {"name": "工商管理", "college": "淬炼商学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 15000, "status": "2026官方信息"},
+    {"name": "市场营销", "college": "淬炼商学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 15000, "status": "2026官方信息"},
+    {"name": "资产评估", "college": "淬炼商学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 15000, "status": "2026官方信息"},
+
+    {"name": "英语", "college": "外国语学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 15000, "status": "2026官方信息"},
+    {"name": "翻译", "college": "外国语学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 15000, "status": "2026官方信息"},
+
+    {"name": "通信工程", "college": "通信与信息工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "电子信息工程", "college": "通信与信息工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "光电信息科学与工程", "college": "通信与信息工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "电信工程及管理", "college": "通信与信息工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "电子信息科学与技术", "college": "通信与信息工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "人工智能", "college": "通信与信息工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+
+    {"name": "自动化", "college": "智能工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "机器人工程", "college": "智能工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "轨道交通信号与控制", "college": "智能工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "电气工程及其自动化", "college": "智能工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "车辆工程", "college": "智能工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "机械设计制造及其自动化", "college": "智能工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "智能制造工程", "college": "智能工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 16000, "status": "2026官方信息"},
+
+    {"name": "网络与新媒体", "college": "艺术传媒学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 18000, "status": "2026官方信息"},
+    {"name": "广播电视编导", "college": "艺术传媒学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 18000, "status": "2026官方信息"},
+    {"name": "数字媒体艺术", "college": "艺术传媒学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 18000, "status": "2026官方信息"},
+
+    {"name": "机械设计制造及其自动化（中德合作）", "college": "德国工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 55000, "status": "2026官方信息"},
+    {"name": "电气工程及其自动化（中德合作）", "college": "德国工程学院", "admissionCategory": "普通本科", "freshmanCampus": "合川校区", "laterCampus": "合川校区", "campusDescription": "4年均在合川", "tuition": 55000, "status": "2026官方信息"},
+
+    {"name": "数字经济", "college": "数字经济商学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 15000, "status": "2026官方信息"},
+    {"name": "互联网金融", "college": "数字经济商学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 15000, "status": "2026官方信息"},
+    {"name": "供应链管理", "college": "数字经济商学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 15000, "status": "2026官方信息"},
+
+    {"name": "健康服务与管理", "college": "大健康管理学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 15000, "status": "2026官方信息"},
+    {"name": "养老服务管理", "college": "大健康管理学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 15000, "status": "2026官方信息"},
+    {"name": "体育经济与管理", "college": "大健康管理学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 15000, "status": "2026官方信息"},
+
+    {"name": "计算机科学与技术", "college": "计算机学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 16000, "status": "2026官方信息"},
+
+    {"name": "数据科学与大数据技术", "college": "大数据学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "大数据管理与应用", "college": "大数据学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "数字媒体技术", "college": "大数据学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 16000, "status": "2026官方信息"},
+
+    {"name": "信息安全", "college": "信息安全学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "物联网工程", "college": "信息安全学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "网络工程", "college": "信息安全学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "软件工程", "college": "信息安全学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 16000, "status": "2026官方信息"},
+    {"name": "区块链工程", "college": "信息安全学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 16000, "status": "2026官方信息"},
+
+    {"name": "戏剧影视文学", "college": "戏剧影视学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 18000, "status": "2026官方信息"},
+    {"name": "电影制作", "college": "戏剧影视学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 18000, "status": "2026官方信息"},
+    {"name": "新媒体技术", "college": "戏剧影视学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 18000, "status": "2026官方信息"},
+    {"name": "动画", "college": "戏剧影视学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 18000, "status": "2026官方信息"},
+    {"name": "戏剧影视美术设计", "college": "戏剧影视学院", "admissionCategory": "普通本科", "freshmanCampus": "綦江校区", "laterCampus": "綦江校区", "campusDescription": "4年均在綦江", "tuition": 18000, "status": "2026官方信息"}
+  ],
+  "lastUpdated": "2026-07-15",
+  "notice": "信息来源：重庆移通学院2026年本科招生专业介绍表。专业名称、校区安排和学费具体以录取通知书及学校官方通知为准。"
+}

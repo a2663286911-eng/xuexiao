@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>校园地图 — 移通新生指南</title>
+  <meta name="description" content="重庆移通学院校园地图 — 合川校区和綦江校区地点查询，教学楼、宿舍、食堂、图书馆、快递点等位置信息。">
+  <meta property="og:title" content="校园地图 — 移通新生指南">
+  <meta property="og:description" content="查找教学楼、宿舍、食堂、快递点等校园地点。合川校区和綦江校区地点信息。">
+  <meta property="og:type" content="website">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/components.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">跳到主内容</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo"><span class="logo-icon">🎓</span>移通新生指南</a>
+      <nav aria-label="主导航">
+        <ul class="nav-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="registration.html">开学报到</a></li>
+          <li><a href="life.html">宿舍生活</a></li>
+          <li><a href="study.html">学习指南</a></li>
+          <li><a href="map.html">校园地图</a></li>
+          <li><a href="military.html">军训指南</a></li>
+          <li><a href="faq.html">新生问答</a></li>
+        </ul>
+      </nav>
+      <a href="search.html" class="nav-search-btn" aria-label="搜索">🔍</a>
+      <button class="menu-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+  <nav class="mobile-nav" aria-label="移动端导航">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="registration.html">开学报到</a></li>
+      <li><a href="life.html">宿舍生活</a></li>
+      <li><a href="study.html">学习指南</a></li>
+      <li><a href="map.html">校园地图</a></li>
+      <li><a href="military.html">军训指南</a></li>
+      <li><a href="faq.html">新生问答</a></li>
+      <li><a href="checklist.html">开学物品清单</a></li>
+      <li><a href="contact.html">联系与答疑</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">🗺️ 校园地图</h1>
+        <p class="page-subtitle">校园地点一览，帮你快速找到想去的地方</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">首页</a><span class="separator">›</span><span>校园地图</span>
+      </nav>
+    </div>
+
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+        <div class="notice notice-info">校园地图第一阶段使用地点卡片方式展示。详细地图后续版本更新。</div>
+
+        <!-- 校园视频与实景 重点入口 -->
+        <div class="panorama-hero">
+          <div class="panorama-hero-body">
+            <div class="panorama-hero-icon">🎬</div>
+            <div class="panorama-hero-text">
+              <h2>校园视频与实景</h2>
+              <p>可通过以下官方视频和页面提前了解重庆移通学院的校园环境、建筑设施和校园生活。</p>
+            </div>
+          </div>
+          <div class="panorama-hero-action">
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <a href="https://cqytih5.smart.vipslib.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">📎 重庆移通学院图书馆</a>
+              <a href="http://m.cqytu.com/shipin/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">🎬 视频移通 — 招生网</a>
+              <a href="https://www.cqytxy.edu.cn/ggfw1/xxxl.htm" target="_blank" rel="noopener noreferrer" class="btn btn-primary">📅 学校校历</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 校园手绘地图 -->
+        <img src="static/image/campus-handdrawn-map-2026.png" alt="重庆移通学院合川校区与綦江校区手绘地图" class="map-preview-image" loading="lazy" onclick="openImage(this.src)">
+        <p class="map-preview-caption">手绘移通｜重庆移通学院合川校区（北校区+南校区）与綦江校区手绘地图</p>
+
+        <!-- Campus toggle -->
+        <div class="filter-bar mb-3">
+          <button class="filter-chip active" data-campus="all">全部校区</button>
+          <button class="filter-chip" data-campus="合川校区">合川校区</button>
+          <button class="filter-chip" data-campus="綦江校区">綦江校区</button>
+        </div>
+
+        <!-- Category filter -->
+        <div class="filter-bar" id="map-category-filter">
+          <button class="filter-chip active" data-category="all">全部</button>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box mb-3" style="max-width:100%;">
+          <input type="search" id="map-search" placeholder="🔍 搜索地点…" aria-label="搜索校园地点">
+        </div>
+
+        <!-- Places -->
+        <div class="card-grid" id="places-container">
+          <div class="loading-state"><span class="icon">⏳</span><p>加载地点数据中…</p></div>
+        </div>
+
+        <div class="conversion-box mt-4">
+          <h3>📦 获取校区信息更新</h3>
+          <p>校园地点信息持续完善中，获取后续更新。</p>
+          <a href="contact.html" class="btn btn-primary">查看领取方式 →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+  <div class="mobile-bottom-bar no-print">
+    <a href="contact.html" class="btn btn-primary btn-sm">📦 领取新生资料</a>
+    <button class="btn-close" aria-label="关闭">✕</button>
+  </div>
+
+  <script src="static/js/data-loader.js"></script>
+  <script src="static/js/main.js"></script>
+  <script src="static/js/analytics.js"></script>
+  <script>
+    (async function() {
+      const data = await DataLoader.getPlaces();
+      if (!data || !data.places) return;
+
+      // 仅显示已发布的地点，并过滤掉全景入口（已在页面顶部独立展示）
+      const places = data.places.filter(function(p) { return p.published !== false && !p.panoramaUrl; });
+      const container = document.getElementById('places-container');
+      const categoryFilter = document.getElementById('map-category-filter');
+      const searchInput = document.getElementById('map-search');
+
+      // 如果没有已发布地点，显示待核实提示
+      if (places.length === 0) {
+        if (categoryFilter) categoryFilter.style.display = 'none';
+        if (searchInput) searchInput.style.display = 'none';
+        container.innerHTML = '<div class="empty-state"><span class="icon">📍</span><h3>校园地点信息正在实地核实</h3><p class="text-muted">本站暂不使用示例地点代替真实地图数据。地点信息核实后将陆续发布。</p></div>';
+        return;
+      }
+
+      // 提取分类
+      const categories = [...new Set(places.map(p => p.category))];
+      categories.forEach(cat => {
+        const chip = document.createElement('button');
+        chip.className = 'filter-chip';
+        chip.dataset.category = cat;
+        chip.textContent = cat;
+        categoryFilter.appendChild(chip);
+      });
+
+      function render(filtered) {
+        if (filtered.length === 0) {
+          container.innerHTML = '<div class="empty-state"><span class="icon">📍</span><h3>没有找到匹配的地点</h3></div>';
+          return;
+        }
+        container.innerHTML = filtered.map(p => {
+          var extraHtml = '';
+          if (p.panoramaUrl) {
+            extraHtml = '<div class="mt-2"><a href="' + p.panoramaUrl + '" target="_blank" rel="noopener noreferrer" class="source-link-btn">📎 查看校园实景全景</a></div>';
+          }
+          return `
+          <div class="place-card" data-campus="${p.campus}" data-category="${p.category}">
+            <div class="place-card-name">${p.name}</div>
+            <div class="place-card-category">${p.category} · ${p.campus}</div>
+            <p class="place-card-desc">${p.description}</p>
+            <div class="text-xs text-muted mt-1">
+              ${p.hours ? '🕐 ' + p.hours + ' · ' : ''}${statusBadge(p.status)}
+            </div>${extraHtml}
+          </div>
+        `}).join('');
+      }
+
+      let currentCampus = 'all';
+      let currentCategory = 'all';
+      let currentSearch = '';
+
+      function applyFilters() {
+        let filtered = places;
+        if (currentCampus !== 'all') filtered = filtered.filter(p => p.campus === currentCampus);
+        if (currentCategory !== 'all') filtered = filtered.filter(p => p.category === currentCategory);
+        if (currentSearch) {
+          const q = currentSearch.toLowerCase();
+          filtered = filtered.filter(p => (p.name + p.category + p.description).toLowerCase().includes(q));
+        }
+        render(filtered);
+      }
+
+      // 校区切换
+      document.querySelectorAll('[data-campus]').forEach(chip => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('[data-campus]').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          currentCampus = chip.dataset.campus;
+          applyFilters();
+        });
+      });
+
+      // 分类切换
+      categoryFilter.addEventListener('click', (e) => {
+        const chip = e.target.closest('.filter-chip');
+        if (!chip) return;
+        categoryFilter.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        currentCategory = chip.dataset.category;
+        applyFilters();
+      });
+
+      // 搜索
+      searchInput.addEventListener('input', () => {
+        currentSearch = searchInput.value.trim();
+        applyFilters();
+      });
+
+      // 处理 URL 的 ?q= 参数 — 自动搜索+筛选
+      var urlQ = getParam('q');
+      if (urlQ) {
+        searchInput.value = urlQ;
+        currentSearch = urlQ;
+        applyFilters();
+        var firstResult = container.querySelector('.place-card');
+        if (firstResult) {
+          firstResult.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      } else {
+        render(places);
+      }
+    })();
+  </script>
+</body>
+</html>

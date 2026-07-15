@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开学物品清单 — 移通新生指南</title>
+  <meta name="description" content="重庆移通学院新生开学物品清单 — 证件材料、衣物、洗漱用品、宿舍用品、学习用品、电子设备、常用药品、军训用品，勾选打钩并自动保存。">
+  <meta property="og:title" content="开学物品清单 — 移通新生指南">
+  <meta property="og:description" content="新学期开学物品清单，分类整理，勾选打钩，自动保存进度。证件、衣物、洗漱、宿舍、学习、电子、药品和军训，一应俱全。">
+  <meta property="og:type" content="article">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/components.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">跳到主内容</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo"><span class="logo-icon">🎓</span>移通新生指南</a>
+      <nav aria-label="主导航">
+        <ul class="nav-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="registration.html">开学报到</a></li>
+          <li><a href="life.html">宿舍生活</a></li>
+          <li><a href="study.html">学习指南</a></li>
+          <li><a href="map.html">校园地图</a></li>
+          <li><a href="military.html">军训指南</a></li>
+          <li><a href="faq.html">新生问答</a></li>
+        </ul>
+      </nav>
+      <a href="search.html" class="nav-search-btn" aria-label="搜索">🔍</a>
+      <button class="menu-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+  <nav class="mobile-nav" aria-label="移动端导航">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="registration.html">开学报到</a></li>
+      <li><a href="life.html">宿舍生活</a></li>
+      <li><a href="study.html">学习指南</a></li>
+      <li><a href="map.html">校园地图</a></li>
+      <li><a href="military.html">军训指南</a></li>
+      <li><a href="faq.html">新生问答</a></li>
+      <li><a href="checklist.html">开学物品清单</a></li>
+      <li><a href="contact.html">联系与答疑</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">✅ 开学物品清单</h1>
+        <p class="page-subtitle">分类整理，勾选打钩，自动保存，不遗漏任何重要物品</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="breadcrumb" aria-label="面包屑">
+        <a href="index.html">首页</a><span class="separator">›</span><span>开学物品清单</span>
+      </nav>
+    </div>
+
+    <section class="section">
+      <div class="container" style="max-width:800px;">
+
+        <!-- Progress -->
+        <div class="checklist-progress">
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-value" id="checklist-done">0</span>
+              <span class="stat-label">已完成</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="checklist-total">0</span>
+              <span class="stat-label">总计</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="checklist-pct">0%</span>
+              <span class="stat-label">完成度</span>
+            </div>
+          </div>
+          <div style="flex:1;min-width:200px;">
+            <div class="progress-bar">
+              <div class="progress-fill" id="checklist-bar" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;">
+          <label for="checklist-search" class="sr-only">搜索物品</label>
+          <input type="search" id="checklist-search" placeholder="🔍 搜索物品…" style="flex:1;min-width:160px;padding:8px 12px;border:1px solid var(--color-border);border-radius:var(--radius);font-family:inherit;font-size:0.9rem;">
+          <button id="checklist-clear" class="btn btn-ghost btn-sm">清空全部</button>
+          <button onclick="window.print()" class="btn btn-ghost btn-sm no-print">🖨️ 打印</button>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="filter-bar" id="checklist-filter">
+          <button class="filter-chip active" data-filter="all">全部</button>
+          <button class="filter-chip" data-filter="documents">🪪 证件材料</button>
+          <button class="filter-chip" data-filter="clothing">🧺 衣物</button>
+          <button class="filter-chip" data-filter="toiletries">🫧 洗漱用品</button>
+          <button class="filter-chip" data-filter="dormitory">🛏️ 宿舍用品</button>
+          <button class="filter-chip" data-filter="study">✏️ 学习用品</button>
+          <button class="filter-chip" data-filter="electronics">📱 电子设备</button>
+          <button class="filter-chip" data-filter="medicine">🩹 常用药品</button>
+          <button class="filter-chip" data-filter="military">☀️ 军训用品</button>
+        </div>
+
+        <!-- Legend -->
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;font-size:0.8rem;">
+          <span><span class="item-tag item-tag-must">必须</span> 必须携带</span>
+          <span><span class="item-tag item-tag-suggest">建议</span> 建议携带</span>
+          <span><span class="item-tag item-tag-buy">到校买</span> 到校再买</span>
+        </div>
+
+        <!-- Checklist Content -->
+        <div id="checklist-container">
+          <div class="loading-state"><span class="icon">⏳</span><p>加载清单中…</p></div>
+        </div>
+
+        <!-- Conversion -->
+        <div class="conversion-box">
+          <h3>📦 想获取可保存的新生资料？</h3>
+          <p>可保存的清单 + 后续报到更新 + 新生问题答疑</p>
+          <a href="contact.html" class="btn btn-primary">查看领取方式 →</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+  <div class="mobile-bottom-bar no-print">
+    <a href="contact.html" class="btn btn-primary btn-sm">📦 领取新生资料</a>
+    <button class="btn-close" aria-label="关闭">✕</button>
+  </div>
+
+  <script src="static/js/data-loader.js"></script>
+  <script src="static/js/main.js"></script>
+  <script src="static/js/checklist.js"></script>
+  <script src="static/js/analytics.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      ChecklistApp.load();
+    });
+  </script>
+</body>
+</html>

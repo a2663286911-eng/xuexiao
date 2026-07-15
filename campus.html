@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>专业与校区查询 — 移通新生指南</title>
+  <meta name="description" content="查询重庆移通学院专业对应的校区（合川校区或綦江校区），了解你的专业在哪个校区就读。">
+  <meta property="og:title" content="专业与校区查询 — 移通新生指南">
+  <meta property="og:description" content="查询你的专业属于哪个校区。合川校区与綦江校区专业分布信息。">
+  <meta property="og:type" content="website">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/components.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">跳到主内容</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo"><span class="logo-icon">🎓</span>移通新生指南</a>
+      <nav aria-label="主导航">
+        <ul class="nav-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="registration.html">开学报到</a></li>
+          <li><a href="life.html">宿舍生活</a></li>
+          <li><a href="study.html">学习指南</a></li>
+          <li><a href="map.html">校园地图</a></li>
+          <li><a href="military.html">军训指南</a></li>
+          <li><a href="faq.html">新生问答</a></li>
+        </ul>
+      </nav>
+      <a href="search.html" class="nav-search-btn" aria-label="搜索">🔍</a>
+      <button class="menu-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+  <nav class="mobile-nav" aria-label="移动端导航">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="registration.html">开学报到</a></li>
+      <li><a href="life.html">宿舍生活</a></li>
+      <li><a href="study.html">学习指南</a></li>
+      <li><a href="map.html">校园地图</a></li>
+      <li><a href="military.html">军训指南</a></li>
+      <li><a href="faq.html">新生问答</a></li>
+      <li><a href="checklist.html">开学物品清单</a></li>
+      <li><a href="contact.html">联系与答疑</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">🏫 专业与校区查询</h1>
+        <p class="page-subtitle">输入专业名称，查询对应校区</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">首页</a><span class="separator">›</span><span>专业与校区</span>
+      </nav>
+    </div>
+
+    <section class="section">
+      <div class="container" style="max-width:700px;">
+        <div class="notice notice-warning" id="major-notice" style="display:none;"></div>
+
+        <div class="major-search">
+          <div class="search-box">
+            <input type="search" id="major-search-input" placeholder="输入专业名称，例如：通信工程、计算机科学与技术…" aria-label="专业名称搜索">
+            <button id="major-search-btn" aria-label="查询">🔍</button>
+          </div>
+        </div>
+
+        <div id="major-results">
+          <p class="text-muted text-center">输入专业名称开始查询</p>
+        </div>
+
+        <div class="source-links mt-3" style="text-align:center;">
+          <a href="http://m.cqytu.com/zhuanye/" target="_blank" rel="noopener noreferrer" class="source-link-btn">📋 查看2026招生专业介绍表</a>
+          <a href="http://m.cqytu.com/zhaoshenggg/2946.html" target="_blank" rel="noopener noreferrer" class="source-link-btn">📄 查看2026招生章程</a>
+          <a href="https://mp.weixin.qq.com/s/YAkqzF6uAFOh9yru3qyYHA" target="_blank" rel="noopener noreferrer" class="source-link-btn">📝 查看2025年报到须知（参考往年）</a>
+        </div>
+
+        <!-- Conversion -->
+        <div class="conversion-box mt-4">
+          <h3>📦 获取专业相关资料</h3>
+          <p>获取你所在专业的新生资料、后续更新和学生交流渠道</p>
+          <a href="contact.html" class="btn btn-primary">查看领取方式 →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+  <div class="mobile-bottom-bar no-print">
+    <a href="contact.html" class="btn btn-primary btn-sm">📦 领取新生资料</a>
+    <button class="btn-close" aria-label="关闭">✕</button>
+  </div>
+
+  <script src="static/js/data-loader.js"></script>
+  <script src="static/js/main.js"></script>
+  <script src="static/js/majors.js"></script>
+  <script src="static/js/analytics.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => MajorSearch.init());</script>
+</body>
+</html>

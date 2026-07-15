@@ -1,0 +1,275 @@
+/* ============================================================
+   responsive.css — 移通新生指南 响应式样式
+   优先适配移动端，逐步增强桌面端
+   ============================================================ */
+
+/* === Mobile First (default: < 768px) === */
+
+/* Show mobile toggle, hide desktop nav */
+.menu-toggle {
+  display: flex;
+}
+
+.nav-list {
+  display: none;
+}
+
+.mobile-nav {
+  display: block;
+}
+
+/* Mobile bottom bar visible by default */
+.mobile-bottom-bar {
+  display: flex;
+}
+
+/* Hide bottom bar on desktop if JS says so */
+@media (min-width: 768px) {
+  .mobile-bottom-bar.desktop-hidden {
+    display: none;
+  }
+}
+
+/* === Mobile hero background positioning === */
+/* 手机端调整背景位置，避免校门主体被裁切 */
+@media (max-width: 767px) {
+  .hero {
+    background-position: 58% 82%;
+    min-height: 400px;
+  }
+}
+
+/* === 480px+ === */
+@media (min-width: 480px) {
+  .hero {
+    padding: 72px 0;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === 768px+ (Tablet / Desktop) === */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .mobile-nav.active {
+    right: -280px;
+  }
+
+  .nav-overlay.active {
+    display: none;
+  }
+
+  .mobile-bottom-bar {
+    display: none;
+  }
+
+  .desktop-side-btn {
+    display: flex;
+  }
+
+  .hero {
+    padding: 96px 0;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .campus-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* Two column layouts */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  /* Article layout */
+  .article-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 32px;
+  }
+
+  /* Table to card override */
+  .table-cards td::before {
+    content: none;
+  }
+}
+
+/* === 1024px+ === */
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 2.75rem;
+  }
+
+  .container {
+    padding: 0 32px;
+  }
+}
+
+/* === 1440px+ === */
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* === Mobile Table → Cards === */
+@media (max-width: 767px) {
+  .table-cards table,
+  .table-cards thead,
+  .table-cards tbody,
+  .table-cards th,
+  .table-cards td,
+  .table-cards tr {
+    display: block;
+  }
+
+  .table-cards thead {
+    display: none;
+  }
+
+  .table-cards tr {
+    margin-bottom: 12px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 12px;
+  }
+
+  .table-cards td {
+    border: none;
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .table-cards td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    font-size: 0.8rem;
+    flex-shrink: 0;
+  }
+}
+
+/* === Touch-friendly === */
+@media (pointer: coarse) {
+  .card-clickable:active {
+    background: var(--color-surface-hover);
+  }
+}
+
+/* === Print styles === */
+@media print {
+  .site-header,
+  .mobile-bottom-bar,
+  .site-footer,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .card,
+  .faq-item {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .checklist-item input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    appearance: checkbox;
+  }
+}
+
+/* === Safe Area (iPhone notch) === */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .mobile-bottom-bar {
+    padding-bottom: max(8px, env(safe-area-inset-bottom));
+  }
+
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* === Reduced Motion Override === */
+@media (prefers-reduced-motion: reduce) {
+  .card:hover,
+  .quick-entry-card:hover,
+  .article-card:hover {
+    transform: none;
+  }
+
+  .skeleton {
+    animation: none;
+  }
+}
+
+/* === Desktop Side Contact Button === */
+.desktop-side-btn {
+  display: none;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 996;
+}
+
+.desktop-side-btn .btn {
+  box-shadow: var(--shadow-lg);
+}
+
+/* === Fix for mobile bottom spacing === */
+.has-bottom-bar {
+  padding-bottom: calc(var(--bottom-bar-height) + 16px + env(safe-area-inset-bottom, 0px));
+}
