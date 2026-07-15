@@ -9,6 +9,11 @@ const ContactPage = (() => {
 
   async function init() {
     const site = await DataLoader.getSite();
+
+    // 复制按钮（不依赖 site 数据，始终绑定）
+    bindCopyButton();
+
+    // 加载失败时仅跳过 site 数据相关逻辑
     if (!site || !site.contact) return;
 
     const contact = site.contact;
@@ -55,18 +60,22 @@ const ContactPage = (() => {
     const disclaimerEl = document.getElementById('contact-disclaimer');
     if (disclaimerEl) disclaimerEl.textContent = site.disclaimer;
 
-    // 复制按钮
-    const copyBtn = document.getElementById('copy-wechat');
-    if (copyBtn) {
-      copyBtn.addEventListener('click', () => {
-        copyToClipboard(contact.wechatId);
-        copyBtn.textContent = '已复制 ✓';
-        setTimeout(() => { copyBtn.textContent = '复制微信号'; }, 2000);
-      });
-    }
-
     // 读取来源并显示对应文案（安全：只用 textContent + 白名单）
     renderSourceMessage();
+  }
+
+  function bindCopyButton() {
+    const copyBtn = document.getElementById('copy-wechat');
+    if (!copyBtn) return;
+
+    copyBtn.addEventListener('click', () => {
+      const wechatIdEl = document.getElementById('wechat-id');
+      const wechatId = wechatIdEl ? wechatIdEl.value : '';
+      if (!wechatId) return;
+      copyToClipboard(wechatId);
+      copyBtn.textContent = '已复制 ✓';
+      setTimeout(() => { copyBtn.textContent = '复制微信号'; }, 2000);
+    });
   }
 
   function renderSourceMessage() {
